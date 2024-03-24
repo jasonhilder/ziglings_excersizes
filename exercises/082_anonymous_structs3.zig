@@ -119,7 +119,7 @@ fn printTuple(tuple: anytype) void {
         print("\"{s}\"({any}):{any} ", .{
             field.name,
             field.type,
-            @field(field, "name"),
+            @field(tuple, field.name),
         });
     }
 }
